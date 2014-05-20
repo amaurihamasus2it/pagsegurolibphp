@@ -39,8 +39,10 @@ class SearchTransactionsAbandoned
              * You can also get your credentials from a config file. See an example:
              * $credentials = PagSeguroConfig::getAccountCredentials();
              */
-            $credentials = new PagSeguroAccountCredentials("vendedor@lojamodelo.com.br",
-               "E231B2C9BCC8474DA2E260B6C8CF60D3");
+            $credentials = new PagSeguroAccountCredentials(
+                "vendedor@lojamodelo.com.br",
+                "E231B2C9BCC8474DA2E260B6C8CF60D3"
+            );
 
             $result = PagSeguroTransactionSearchService::searchAbandoned(
                 $credentials,

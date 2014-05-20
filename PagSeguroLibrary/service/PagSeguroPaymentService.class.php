@@ -89,7 +89,7 @@ class PagSeguroPaymentService
                         $paymentReturn = $PaymentParserData->getCode();
                     } else {
                         $paymentReturn = self::buildCheckoutUrl($connectionData, $PaymentParserData->getCode());
-                    }    
+                    }
                     LogPagSeguro::info(
                         "PagSeguroPaymentService.Register(" . $paymentRequest->toString() . ") - end {1}" .
                         $PaymentParserData->getCode()

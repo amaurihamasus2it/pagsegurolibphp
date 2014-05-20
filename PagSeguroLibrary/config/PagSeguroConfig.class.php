@@ -98,11 +98,13 @@ class PagSeguroConfig
         }
     }
 
-    public static function getPaymentRedirectUrl() {
+    public static function getPaymentRedirectUrl() 
+    {
         return PagSeguroResources::getPaymentUrl(self::$data['environment']);
     }
 
-    public static function getStaticUrl() {
+    public static function getStaticUrl() 
+    {
         return PagSeguroResources::getStaticUrl(self::$data['environment']);
     }
 

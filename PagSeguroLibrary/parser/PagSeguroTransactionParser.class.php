@@ -393,8 +393,8 @@ class PagSeguroTransactionParser extends PagSeguroServiceParser
 
         if (isset($data["recoveryCode"])) {
             $transactionSummary->setRecoveryCode($data["recoveryCode"]);
-        }		
-		
+        }
+        
         return $transactionSummary;
     }
 }

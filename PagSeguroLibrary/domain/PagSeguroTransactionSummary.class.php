@@ -92,7 +92,7 @@ class PagSeguroTransactionSummary
 
     /**
      * Recovery Code
-     */	
+     */
     private $recoveryCode;
     
     /**

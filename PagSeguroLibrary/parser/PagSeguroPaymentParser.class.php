@@ -119,7 +119,7 @@ class PagSeguroPaymentParser extends PagSeguroServiceParser
                 $data['shippingType'] = $payment->getShipping()->getType()->getValue();
             }
 
-            if ($payment->getShipping()->getCost() != null && $payment->getShipping()->getCost() != null) {	
+            if ($payment->getShipping()->getCost() != null && $payment->getShipping()->getCost() != null) {
                 $data['shippingCost'] = PagSeguroHelper::decimalFormat($payment->getShipping()->getCost());
             }
 
